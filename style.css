@@ -162,6 +162,11 @@ button:hover{
         width:100%;
     }
 }
+@media only screen and (max-width:375px){
+    .slider{
+        top:40%;
+    }
+}
 
 @media only screen and (max-width:430px){
     navbar{
@@ -205,14 +210,14 @@ button:hover{
     }
     .slider{
         left:72%;
-        top:47.5%;
+        top:46.5%;
     }
     
 }
 @media only screen and (min-width:600px)and (max-width:768px){
     .slider{
         left:85%;
-        top:67.5%;
+        top:67.3%;
     }
     .about-text p{
         width:90%;
