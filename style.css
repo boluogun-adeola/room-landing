@@ -131,44 +131,7 @@ button:hover{
     display:none;
 }
 @media only screen and (max-width:768px){
-    navbar{
-        height:70px;
-        width:100%;
-        top:0;
-        left:0;
-        padding-top:5%;
-        padding-left:3%;
-        
-    }
-    .nav-logo{
-        margin-left:6.5em;
-    }
-    .close{
-        transform:translateX(-95%);
-    }
-    .nav-links{
-        visibility:hidden;
-        transform:translateX(-85%);
-    }
-    li a{
-        color:var(--black);
-    }
-    li a:hover{
-        border-bottom: none;
-    }
-    .hamburger{
-        visibility: visible;
-    }
-    .shadow{
-        position:absolute;
-        top:15%;
-        z-index:100;
-        width:100%;
-        height:720px;
-        background-color:var(--verydarkgray);
-        opacity:0.5;
-        visibility: hidden;
-    }
+
     .flex{
         flex-direction:column;
     }
@@ -197,5 +160,87 @@ button:hover{
     }
     .about img{
         width:100%;
+    }
+}
+
+@media only screen and (max-width:430px){
+    navbar{
+        height:70px;
+        width:100%;
+        top:0;
+        left:0;
+        padding-top:5%;
+        padding-left:3%;
+        
+    }
+    .nav-logo{
+        margin-left:6.5em;
+    }
+    .close{
+        transform:translateX(-95%);
+    }
+    .nav-links{
+        visibility:hidden;
+        transform:translateX(-85%);
+    }
+    li a{
+
+        color:var(--black);
+    }
+    li a:hover{
+        border-bottom: none;
+    }
+    .hamburger{
+        visibility: visible;
+    }
+    .shadow{
+        position:absolute;
+        top:8.85%;
+        z-index:100;
+        width:100%;
+        height:650px;
+        background-color:var(--verydarkgray);
+        opacity:0.5;
+        visibility: hidden;
+    }
+    .slider{
+        left:72%;
+        top:47.5%;
+    }
+    
+}
+@media only screen and (min-width:600px)and (max-width:768px){
+    .slider{
+        left:85%;
+        top:67.5%;
+    }
+    .about-text p{
+        width:90%;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1024px){
+    .image{
+        width:55%;
+    }
+    .image img{
+        width:100%;
+    }
+    .text{
+        width:45%;
+    }
+    .slider{
+        left:43.5%;
+        top:81%;
+    }
+    .box-1,.box-3{
+        width:30%;
+    }
+    .box-1 img,.box-3 img{
+        width:100%;
+        height:100%;
+    }
+    
+    .about-text{
+        width:40%
     }
 }

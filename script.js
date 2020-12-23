@@ -30,7 +30,7 @@ close.addEventListener('click',closeNav);
 //slideshow
 
 let slideIndex = 1;
-showSlide(slideIndex);
+showSlides(slideIndex);
 
 function slides(n) {
     showSlides(slideIndex += n);
