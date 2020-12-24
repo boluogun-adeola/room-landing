@@ -18,7 +18,7 @@ body{
 navbar{
     position:absolute;
     z-index:100;
-    top:5%;
+    top:8%;
     left:3%;
     display:flex;
     justify-content: space-between;
@@ -45,13 +45,34 @@ li a:hover{
     cursor:pointer;
     visibility:hidden;
 }
-.image{
+
+.flex{
+    display:flex;
+    
+}
+ .image{
     position:relative;
     z-index:-1;
     top:-10px;
 }
-.flex{
+
+.slider{
     display:flex;
+    position:absolute;
+    z-index:1000;
+    bottom:28.2%;
+    left: 56%;
+}
+button{
+    outline: none;
+    background-color: var(--black);
+    border:none;
+    cursor:pointer;
+    width:4.5em;
+    height:4em;
+}
+button:hover{
+    background-color: var(--verydarkgray);
 }
 .mobile-image{
     display:none;
@@ -84,27 +105,8 @@ li a:hover{
 .text p:last-of-type:hover{
     color:var(--darkgray);
 }
-.features{
-    position:relative;
-}
-.slider{
-    display:flex;
-    position:absolute;
-    z-index:1000;
-    top: 87.5%;
-    left: 62.2%;
-}
-button{
-    outline: none;
-    background-color: var(--black);
-    border:none;
-    cursor:pointer;
-    width:4.5em;
-    height:4em;
-}
-button:hover{
-    background-color: var(--verydarkgray);
-}
+
+
 .about{
     display:flex;
     flex-wrap: nowrap;
@@ -130,122 +132,152 @@ button:hover{
 .available,.manufacture{
     display:none;
 }
-@media only screen and (max-width:768px){
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+    }
 
-    .flex{
-        flex-direction:column;
+    @media only screen and (min-width:1000px) and (max-width:1024px){
+        navbar{
+            top:5%;
+            left:1%;
+        }
+        .image{
+            width:55%;
+        }
+        .image img{
+            width:100%;
+        }
+        .text{
+            width:45%;
+        }
+        .slider{
+            left:43.5%;
+            top:81%;
+        }
+        .box-1,.box-3{
+            width:30%;
+        }
+        .box-1 img,.box-3 img{
+            width:100%;
+            height:100%;
+        }
+        
+        .about-text{
+            width:40%
+        }
+        .slider{
+            top:36%;
+            left:49%;
+        }
     }
-    .slider{
-        top:54%;
-        left:75%;
+    @media only screen and (max-width:768px){
+
+        .flex{
+            flex-direction:column;
+        }
+      
+        .image img{
+            width:100%;
+        }
+        .mobile-image{
+            display:block;
+        }
+        .desktop-image{
+            display:none;
+        }
+        .text h3{
+            width:100%;
+        }
+        .about{
+            flex-direction:column;
+            width:100%;
+            top:3em;
+            
+        }
+        .about img{
+            width:100%;
+        }
+    }
+    @media only screen and (min-width:600px)and (max-width:768px){
+        .slider{
+            left:84.5%;
+            bottom:7%;
+        }
+        .about-text p{
+            width:90%;
+        }
+    }
+    @media only screen and (max-width:450px){
+        navbar{
+            height:70px;
+            width:100%;
+            top:0;
+            left:0;
+            padding-top:5%;
+            padding-left:3%;
+            
+        }
+        .nav-logo{
+            margin-left:6.5em;
+        }
+        .close{
+            transform:translateX(-95%);
+        }
+        .nav-links{
+            visibility:hidden;
+            transform:translateX(-85%);
+        }
+        li a{
+    
+            color:var(--black);
+        }
+        li a:hover{
+            border-bottom: none;
+        }
+        .hamburger{
+            visibility: visible;
+        }
+        .shadow{
+            position:absolute;
+            top:8.85%;
+            z-index:100;
+            width:100%;
+            height:650px;
+            background-color:var(--verydarkgray);
+            opacity:0.5;
+            visibility: hidden;
+        }
+        .slider{
+           
+          bottom:32.5%;
+          left:72%;
+    
+        }
+        .text h3{
+            width:100%;
+        }
         
     }
-    .image img{
-        width:100%;
-    }
-    .mobile-image{
-        display:block;
-    }
-    .desktop-image{
-        display:none;
-    }
-    .text h3{
-        width:85%;
-    }
-    .about{
-        flex-direction:column;
-        width:100%;
-        top:3em;
-        
-    }
-    .about img{
-        width:100%;
-    }
-}
 @media only screen and (max-width:375px){
     .slider{
-        top:40%;
+        bottom:40.5%;
+        left:68%;
+    }
+}
+@media only screen and (max-width:320px){
+    .slider{
+        bottom:49.5%;
+        left:63%;
+    }
+    .text h3{
+        width:100%;
     }
 }
 
-@media only screen and (max-width:430px){
-    navbar{
-        height:70px;
-        width:100%;
-        top:0;
-        left:0;
-        padding-top:5%;
-        padding-left:3%;
-        
-    }
-    .nav-logo{
-        margin-left:6.5em;
-    }
-    .close{
-        transform:translateX(-95%);
-    }
-    .nav-links{
-        visibility:hidden;
-        transform:translateX(-85%);
-    }
-    li a{
 
-        color:var(--black);
-    }
-    li a:hover{
-        border-bottom: none;
-    }
-    .hamburger{
-        visibility: visible;
-    }
-    .shadow{
-        position:absolute;
-        top:8.85%;
-        z-index:100;
-        width:100%;
-        height:650px;
-        background-color:var(--verydarkgray);
-        opacity:0.5;
-        visibility: hidden;
-    }
-    .slider{
-        left:72%;
-        top:46.5%;
-    }
-    
-}
-@media only screen and (min-width:600px)and (max-width:768px){
-    .slider{
-        left:85%;
-        top:67.3%;
-    }
-    .about-text p{
-        width:90%;
-    }
-}
-@media only screen and (min-width:1000px) and (max-width:1024px){
-    .image{
-        width:55%;
-    }
-    .image img{
-        width:100%;
-    }
-    .text{
-        width:45%;
-    }
-    .slider{
-        left:43.5%;
-        top:81%;
-    }
-    .box-1,.box-3{
-        width:30%;
-    }
-    .box-1 img,.box-3 img{
-        width:100%;
-        height:100%;
-    }
-    
-    .about-text{
-        width:40%
-    }
-}
+
+
