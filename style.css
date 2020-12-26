@@ -168,6 +168,10 @@ button:hover{
         .about-text{
             width:40%
         }
+    
+        .slider{
+            top:36%;
+        }
         
     }
     @media only screen and (max-width:768px){
@@ -200,13 +204,13 @@ button:hover{
     }
     @media only screen and (max-width:768px) and (orientation:landscape){
         .slider{
-            top:100%;
+            bottom:0;
         }
     }
     @media only screen and (min-width:600px)and (max-width:768px){
         .slider{
             left:84.5%;
-            top:65.5%;
+            top:74.5%;
         }
         .about-text p{
             width:90%;
@@ -255,7 +259,7 @@ button:hover{
         }
         .slider{
            
-          top:58%;
+          top:51%;
           left:72%;
     
         }
@@ -266,7 +270,7 @@ button:hover{
     }
 @media only screen and (max-width:375px){
     .slider{
-        top:50.5%;
+        top:45.5%;
         left:68%;
     }
 }
