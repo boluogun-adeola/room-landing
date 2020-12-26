@@ -60,8 +60,7 @@ li a:hover{
     display:flex;
     position:absolute;
     z-index:1000;
-    bottom:28.2%;
-    left: 56%;
+   
 }
 button{
     outline: none;
@@ -198,8 +197,7 @@ button:hover{
     }
     @media only screen and (min-width:600px)and (max-width:768px){
         .slider{
-            left:84.5%;
-            bottom:12%;
+           
         }
         .about-text p{
             width:90%;
@@ -247,8 +245,7 @@ button:hover{
         }
         .slider{
            
-          bottom:49%;
-          left:72%;
+          
     
         }
         .text h3{
@@ -258,14 +255,12 @@ button:hover{
     }
 @media only screen and (max-width:375px){
     .slider{
-        bottom:55.5%;
-        left:68%;
+        
     }
 }
 @media only screen and (max-width:320px){
     .slider{
-        bottom:62%;
-        left:63%;
+        
     }
     .text h3{
         width:100%;
