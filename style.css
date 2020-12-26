@@ -205,18 +205,20 @@ button:hover{
             width:100%;
         }
     }
-    @media only screen and (max-width:768px) and (orientation:landscape){
-        .slider{
-            bottom:0;
-        }
-    }
+
     @media only screen and (min-width:600px)and (max-width:768px){
         .slider{
-            left:80.5%;
-            top:71.5%;
+            left:84.5%;
+            top:69.5%;
         }
         .about-text p{
             width:90%;
+        }
+    }
+
+    @media only screen and (max-width:768px) and (orientation:landscape){
+        .slider{
+            bottom:0;
         }
     }
    
@@ -262,7 +264,7 @@ button:hover{
         }
         .slider{
            
-          top:45%;
+          top:48%;
           left:72%;
     
         }
@@ -273,7 +275,7 @@ button:hover{
     }
 @media only screen and (max-width:375px){
     .slider{
-        top:40.5%;
+        top:43.5%;
         left:68%;
     }
 }
