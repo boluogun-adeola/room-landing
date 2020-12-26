@@ -171,8 +171,8 @@ button:hover{
         }
     
         .slider{
-            top:40%;
-            left:58%;
+            top:45%;
+            left:49%;
             
         }
         
@@ -213,7 +213,7 @@ button:hover{
     @media only screen and (min-width:600px)and (max-width:768px){
         .slider{
             left:80.5%;
-            top:74.5%;
+            top:71.5%;
         }
         .about-text p{
             width:90%;
@@ -262,7 +262,7 @@ button:hover{
         }
         .slider{
            
-          top:43%;
+          top:45%;
           left:72%;
     
         }
@@ -273,7 +273,7 @@ button:hover{
     }
 @media only screen and (max-width:375px){
     .slider{
-        top:38.5%;
+        top:40.5%;
         left:68%;
     }
 }
