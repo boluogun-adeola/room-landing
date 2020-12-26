@@ -61,8 +61,8 @@ li a:hover{
     display:flex;
     position:absolute;
     z-index:1000;
-    top:64.5%;
-    left:56%;
+    top:71.5%;
+    left:62.2%;
 
 }
 button{
@@ -202,15 +202,21 @@ button:hover{
             width:100%;
         }
     }
+    @media only screen and (max-width:768px) and (orientation:landscape){
+        .slider{
+            top:100%;
+        }
+    }
     @media only screen and (min-width:600px)and (max-width:768px){
         .slider{
             left:84.5%;
-            top:86.5%;
+            top:65.5%;
         }
         .about-text p{
             width:90%;
         }
     }
+   
     @media only screen and (max-width:450px){
         navbar{
             height:70px;
@@ -253,7 +259,7 @@ button:hover{
         }
         .slider{
            
-          top:44%;
+          top:58%;
           left:72%;
     
         }
@@ -264,7 +270,7 @@ button:hover{
     }
 @media only screen and (max-width:375px){
     .slider{
-        top:38%;
+        top:50.5%;
         left:68%;
     }
 }
