@@ -168,11 +168,7 @@ button:hover{
         .about-text{
             width:40%
         }
-        .slider{
-            top:36%;
-            left:43.5%;
-            
-        }
+        
     }
     @media only screen and (max-width:768px){
 
